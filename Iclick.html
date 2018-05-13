@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Iclic, l'info gaming en un clic</title>                
+    <link rel="stylesheet" href="Iclickmain.css" type="text/css" media="all">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <div class="outer-wrap">
+
+    <header class="masthead">
+        <div class="sidebar-switcher">
+
+             <span class="screen-reader-text">navigation
+
+        	<a href="#" class="hide-sidebar-toggle"><i class="fas fa-bars"></i>
+                <span class="screen-reader-text">Menu du navigation</span>
+            </a></div>
+
+        <div class="centered">
+            
+              <!--<h1 class="site-title">--><img src="Images/Noir.Blanc.png" alt="LOGO" class="image"><!--</h1>-->
+            <!-- .site-title -->
+        </div><!-- .centered -->
+            <div class="nav-mixed menu">
+                <nav id="multi-level-nav" class="multi-level-nav" role="navigation">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li class="has-children">
+                            <a href="#">Catégories<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child menu</span></button></a> 
+                            <ul class="sub-menu">
+                                <li><a href="#">Arcade</a></li>
+                                <li><a href="#">FPS</a></li>
+                                <li><a href="#">Combat</a></li>
+                                <li><a href="#">Plateforme</a></li>
+                                <li><a href="#">Survival</a></li>
+                                <li><a href="#">RPG</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Consoles<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child menu</span></button></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">PS3</a></li>
+                                <li><a href="#">PS4</a></li>
+                                <li><a href="#">XBox360</a></li>
+                                <li><a href="#">XBoxOne</a></li>
+                                <li><a href="#">Switch</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Prochainement<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child menu</span></button></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sorties</a></li>
+                                <li><a href="#">Evènements</a></li>
+                                <li><a href="#">Concours</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav><!-- #multi-level-nav .multi-level-nav -->
+				<form action="/search" id="searchthis" method="get">
+					<!--<div class="recherche"> penser a mettre l'icone loupe-->
+						<input class="search" type="text" name="search" placeholder="Rechercher"/>
+						
+						<button class="fas fa-search" id="loupe" type="submit"/></button>
+					<!--</div>-->
+				</form>
+              <nav id="social-menu" class="social-menu" role="navigation">
+                    <ul>
+                        <li><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                        <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                        <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                        <li><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                        <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                    </ul>
+                </nav><!-- .social-menu -->
+            </div><!-- .mixed-menu -->
+    </header><!-- .masthead -->
+    
+    <div class="content">
+        <main class="main-area">
+           
+                <div id="player">
+
+                  <script class="videoYoutube">
+                    // 2. This code loads the IFrame Player API code asynchronously.
+                    var tag = document.createElement('script');
+
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    // 3. This function creates an <iframe> (and YouTube player)
+                    //    after the API code downloads.
+                    var player;
+                    function onYouTubeIframeAPIReady() {
+                      player = new YT.Player('player', {
+                        height: '20%',
+                      width: '45%',
+                        videoId: 'Ay_RAkE7bUY',
+                        events: {
+                          'onReady': onPlayerReady,
+                          'onStateChange': onPlayerStateChange
+                        }
+                      });
+                    }
+
+                    // 4. The API will call this function when the video player is ready.
+                    function onPlayerReady(event) {
+                      //event.target.playVideo();
+                    }
+
+                    // 5. The API calls this function when the player's state changes.
+                    //    The function indicates that when playing a video (state=1),
+                    //    the player should play for six seconds and then stop.
+                    var done = false;
+                    function onPlayerStateChange(event) {
+                      if (event.data == YT.PlayerState.PLAYING && !done) {
+                        setTimeout(stopVideo, 6000);
+                        done = true;
+                      }
+                    }
+                    function stopVideo() {
+                      player.stopVideo();
+                    }
+
+                  </script>
+
+               </div>
+              <section class="cards">
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="img/Farr-Craye.png" alt="Mountain View" class="image">
+                        </figure>
+                        <div class="card-content">
+                            <div class="titre">
+                           Far Cry 2, une suite à la hauteur ?
+                        </div><br/>
+                      <div class="presentation" >
+                           Suite de Far Cry premier du nom, ce deuxième volet sur PC ne vous conduit plus sur une île paradisiaque, mais au coeur de la savane africaine. Muni d'un moteur graphique encore plus puissant, le titre vous propose de découvrir ou redécouvrir l'univers si particulier de Far Cry et son lot d'armes dévastatrices.
+                      </div>                       
+                        </div><!-- .card-content -->
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="img/Gost-Beusteure.png" alt="Mountain View" class="image">
+                        </figure>
+                        <div class="card-content">
+                          <div class="titre">Plus qu'un divertissement ?</div><br/>
+		              <div class="presentation" >
+			             Incarnez un vrai Ghostbusters sur PC dans le jeu vidéo du même nom. Nouvelle recrue du clan des chasseurs de fantômes, vous devez nettoyer Manhattan des hordes d'espèces visqueuses et immondes qui terrorisent la ville. Une dizaine de niveaux vous attendent ainsi que des mini-jeux pour annihiler tout fantôme qui menace vos concitoyens.
+		              </div>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="img/Péhaisse-cinque.png" alt="Mountain View" class="image">
+                        </figure>
+                        <div class="card-content">
+                          <div class="titre">La nouvelle console de Sony !</div><br/>
+		
+		                  <div class="presentation" >
+			                 Selon certaines sources, la prochaine console de Sony sortirait pour l’hiver 2020 et coûterait 399€. Cette nouvelle console serait la Playstation 5, elle serait mise à jour régulièrement et l’achat de jeux se ferait de manière dématérialisée. 
+		                  </div>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="img/SiIlante-Hill.png" alt="Mountain View" class="image">
+                        </figure>
+                        <div class="card-content">
+                          <div class="titre">Le meilleur jeu du monde !</div><br/>
+		                  <div class="presentation" >
+			                 L'horreur, le brouillard oppressant et le mystère glauque de Silent Hill sont de retour avec un nouvel opus qui nous arrive sur PS2 pour très probablement devenir l'une des références incontestables de sa catégorie avec une réalisation magnifique mais surtout une ambiance insoutenable.
+		                  </div> 
+                        </div> <!-- .card-content-->
+                    </a>
+                </article> <!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="img/Stryte-Fayeteur.png" alt="Mountain View" class="image">
+                        </figure>
+                        <div class="card-content">
+                          <div class="titre">Un aperçus à la hauteur !</div><br/>
+		
+		                  <div class="presentation" >
+			                 Avant même de montrer la moindre seconde de gameplay, Dragon Ball FighterZ avait réussi à séduire les fans avec quelques screens. Ces derniers permettaient de constater le travail effectué par Ark System Work sur l'apparence du jeu. Logique, pour des screenshots. Ce qui n'allait pas de soi, c'est que ces images allaient nous arracher la rétine.
+		                  </div>
+                        </div><!-- .card-content-->
+                    </a>
+                </article> <!-- .card -->
+
+            </section> <!-- .cards -->
+
+        </main>
+
+        <div class="sidebar">
+          <div class="connexion">
+                  <input type="text" class="login" placeholder="Login">
+                  <input type="text" class="password" placeholder="Mot de passe">
+                 <a href="#"><button class="signin">Incrivez-vous</button> </a>
+                </div>
+          <h3>Catégories</h3>
+          <nav class="example-menu">
+                <ul>
+                    <li><a href="#">Arcade</a></li>
+                    <li><a href="#">FPS</a></li>
+                    <li><a href="#">Combat</a></li>
+                    <li><a href="#">Plateforme</a></li>
+                    <li><a href="#">Survival</a></li>
+                    <li><a href="#">RPG</a></li>
+                </ul>
+          <h3>Consoles</h3>
+                <ul>   
+              <li><a href="#">PS3</a></li>
+      				<li><a href="#">PS4</a></li>
+      				<li><a href="#">PSP</a></li>
+      				<li><a href="#">Xbox360</a></li>
+      				<li><a href="#">XboxOne</a></li>
+      				<li><a href="#">Switch</a></li>
+                </ul>
+
+
+            </nav><!-- .example-menu -->
+        </div><!-- .sidebar -->
+    </div><!-- .content -->
+
+      <footer class="footer-area">      
+    		<a href="#"  class="fa fa-facebook-official fa-5x" aria-hidden="true"></a>
+    		<a href="#"  class="fa fa-instagram fa-5x" aria-hidden="true"></a>
+    		<a href="#"  class="fa fa-twitter fa-5x" aria-hidden="true"></a>
+      
+      
+    		<a href="#">Accueil</a>
+    		<a href="#">Mention légales</a>
+    		<a href="#">Contact</a>
+    		<a href="#">Signaler un bug</a>
+        
+	   </footer>
+  
+
+    </div><!-- .outer-wrap -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+        
+
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="JS/libs/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="JS/sidebar-switcher.js"></script>
+    <script type="text/javascript" src="JS/menu-toggle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* CSS Document code source*/
+
+.masthead{
+	background: #babdbe;
+}
+
+.main-area{
+	padding: 0.5em;
+    background-color: #babdbe;
+
+}
+/* BARRE DE RECHERCHE*/
+.search{
+	transition : .4s;
+	width: 50%;
+	float: left;
+	border-color: black;
+	height: 80%;
+	margin-top: 4px;
+}
+.search:focus {
+	transition : .4s;
+	width:70%; /* pas plus de 63%*/
+}
+
+#loupe {
+	font-family: 'FontAwesome';
+	content: '\f002';
+	position: relative;
+	height: 80%;
+	width: 25%;
+	border-color: black;
+	margin-top: 4px;
+}
+/* FIN DE BARRE DE RECHERCHE*/
+
+#player {
+	margin-right: 27.5%;
+	margin-left: 27.5%;
+}
+/* BARRE ASIDE*/
+.sidebar{
+	background-color: #263238;
+}
+.sidebar a, .sidebar h3{
+	color : white;
+}
+.sidebar>a:hover {
+	color : white;
+	text-decoration: none;
+}
+/* FIN BARRE ASIDE*/
+/* FOOTER*/
+.footer-area {
+	background-color: #263238;
+}
+.footer-area>a {
+	color:grey;
+	text-decoration: none;
+}
+.footer-area>a:hover{
+	color: white;
+	text-decoration: none;
+}
+.footer-area>a:visited {
+	color: none;
+}
+/*FIN FOOTER*/

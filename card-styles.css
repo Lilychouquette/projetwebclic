@@ -1,0 +1,63 @@
+/* Card Based Layout - Base styles codesource */
+
+body {
+	background: hsl(0, 0%, 90%);
+}
+
+.masthead {
+	background: hsl(0, 0%, 20%);`
+}
+
+.cards {
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.card {
+	background: white;
+	margin-bottom: 1em;
+}
+
+.card a {
+	color: black;
+}
+
+.card a:hover {
+	transition: 0.8s;
+	box-shadow: 10px 5px 10px black;
+	text-decoration: none;
+	color: black;
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+}
+
+.card-content p {
+	font-size: 95%;
+}
+
+
+/*Flexbox*/
+@media screen and (min-width: 40em){
+	.cards{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.card{
+		flex: 0 1 calc(50% - 1em);
+		display: flex;
+	}
+}
+@media screen and (min-width: 60em){
+	.card{
+		flex: 0 1 calc(29% - 1em);
+	}
+}

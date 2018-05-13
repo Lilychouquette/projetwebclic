@@ -1,0 +1,11 @@
+/* Styles pour les menus mixtes (déroulants + social) code source */
+.nav-mixed{
+	display: flex;
+	flex-wrap: wrap;
+	/*modif*/
+	justify-content: space-between;
+	align-items: center;
+	/*fin modif*/
+	background-color: #263238;
+	height: 50px;
+}

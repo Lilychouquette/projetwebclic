@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+.centered {
+	width: 20em;
+	height:auto;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+.centered > img {
+	max-width: 10em;
+	height: auto;
+	justify-content: center;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}
